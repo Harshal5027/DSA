@@ -7,10 +7,9 @@ public class Program9 {
     int fun(int num){
 
         if(num==0){
-            return num;
+            return 0;
         }
         
-
         return num%10 + fun(num/10);
 
     }
