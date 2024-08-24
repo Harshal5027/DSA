@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Program14 {
 
-    static int repeatingNumber(int N, int K, int arr[]){
+    static void repeatingNumber(int N, int K, int arr[]){
 
         int maxCount = 0;
 
@@ -33,7 +33,6 @@ public class Program14 {
 
         System.out.println("In the array the element "+ maxElement +" comes for "+maxCount+" times");
 
-        return 10;
 
     }
 
@@ -60,7 +59,5 @@ public class Program14 {
 
         repeatingNumber(N, K, arr);
 
-
-    }
-    
+    }   
 }
