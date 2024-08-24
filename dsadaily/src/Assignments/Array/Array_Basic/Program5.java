@@ -1,7 +1,7 @@
 
 //--------------------------- Replace all 0 with 5's----------------------------------
 
-package Assignments.Array_Basic;
+package Assignments.Array.Array_Basic;
 
 public class Program5 {
 

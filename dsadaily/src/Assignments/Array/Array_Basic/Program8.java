@@ -1,4 +1,4 @@
-package Assignments.Array_Basic;
+package Assignments.Array.Array_Basic;
 
 public class Program8 {
     public static void main(String[] args) {

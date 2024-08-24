@@ -1,7 +1,7 @@
 
 //////////////////////////Elements in the range/////////////////////////////////////////
 
-package Assignments.Array_Basic;
+package Assignments.Array.Array_Basic;
 
 public class Program6 {
     

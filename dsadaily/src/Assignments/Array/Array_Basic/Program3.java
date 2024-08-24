@@ -1,7 +1,7 @@
 
 //      Largest element in array
 
-package Assignments.Array_Basic;
+package Assignments.Array.Array_Basic;
 
 public class Program3 {
     public static void main(String[] args) {

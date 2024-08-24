@@ -1,4 +1,4 @@
-package Assignments.Array_Basic;
+package Assignments.Array.Array_Basic;
 
 public class Program11 {
 

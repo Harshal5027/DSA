@@ -1,4 +1,4 @@
-package Assignments.Array_Basic;
+package Assignments.Array.Array_Basic;
 
 import java.util.Arrays;
 

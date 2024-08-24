@@ -1,4 +1,7 @@
-package Assignments.Array_Basic;
+
+//      Find unique element            
+
+package Assignments.Array.Array_Basic;
 
 public class Program13 {
 

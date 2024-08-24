@@ -1,4 +1,7 @@
-package Assignments.Array_Basic;
+
+//  First And Last Occurance of the index
+
+package Assignments.Array.Array_Basic;
 
 import java.util.ArrayList;
 
@@ -28,7 +31,7 @@ public class Program12 {
 
     public static void main(String[] args) {
         
-        int arr[]=new int[]{1,3,5,4,4,6,3,5,3};
+        int arr[]=new int[]{1,3,5,4,4,6,3,5,2};
         int N=arr.length;
         int x=3;
 
