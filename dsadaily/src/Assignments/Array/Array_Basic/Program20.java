@@ -24,7 +24,7 @@ public class Program20 {
         
         int arr[] = {0, -1, 2, -3, 1};
 
-        int sum = -24;
+        int sum = -2;
 
         System.out.println(sumPair( arr, sum));
     }
