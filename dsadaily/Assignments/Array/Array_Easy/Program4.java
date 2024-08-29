@@ -14,9 +14,7 @@ public class Program4 {
             for( int j = i+1; j < N; j++){
 
                 if( arr[i] + arr[j] == K ){
-
-                    // System.out.println(arr[i] + arr[j]);
-
+                    
                     count++;
                 }
             }
