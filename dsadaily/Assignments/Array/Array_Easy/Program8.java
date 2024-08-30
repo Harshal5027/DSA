@@ -17,11 +17,11 @@ public class Program8 {
 
     public static void main(String[] args) {
         
-        int arr[] = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int arr[] = { 1, 2, 3, 4, 5};
 
         int rotateArr[] = new int[arr.length];
 
-        int D = 3;
+        int D = 2;
 
         rotateArr( arr, rotateArr, arr.length, D );
 
