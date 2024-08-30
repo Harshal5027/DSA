@@ -38,7 +38,7 @@ public class Program3 {
 
     public static void main(String[] args) {
         
-        int arr[] = {0, 3, 1, 2};
+        int arr[] = {2, 3, 1, 2, 3};
 
         duplicatesInArray( arr, arr.length );
     }
