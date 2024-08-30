@@ -31,7 +31,7 @@ public class Program6 {
 
     public static void main(String[] args) {
         
-        int arr[] = { 12, 35, 1, 10, 34, 1};
+        int arr[] = { 12, 35, 1, 10, 34, 11, 1};
 
         System.out.println(secondLargest( arr, arr.length));
     }
