@@ -22,7 +22,7 @@ public class Program7 {
     }
     public static void main(String[] args) {
         
-        int arr[] = { 90, 80, 10, 70, 30, 40};
+        int arr[] = { 10, 20, 30, 40, 50};
 
         sortedOrNot( arr, arr.length);
     }
