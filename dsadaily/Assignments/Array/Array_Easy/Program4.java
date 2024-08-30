@@ -29,7 +29,7 @@ public class Program4 {
 
     public static void main(String[] args) {
         
-        int arr[] = { 1, 1, 1, 1};
+        int arr[] = { 1, 1, 1, 1, 1};
 
         int K = 2;
 
