@@ -26,3 +26,6 @@ public class Program10 {
     }
     
 }
+
+
+//      It is not optimized
