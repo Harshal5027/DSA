@@ -9,6 +9,8 @@ public class Program17 {
 
         if(num<=1){
             return num;
+        }else{
+            
         }
 
     }
