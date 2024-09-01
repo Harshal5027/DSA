@@ -24,7 +24,7 @@ public class Program16 {
     }
     public static void main(String[] args) {
         
-        int num = 8;
+        int num = 7;
 
         fibonacciSeries(num);
 
