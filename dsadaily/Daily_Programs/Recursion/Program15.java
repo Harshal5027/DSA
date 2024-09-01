@@ -16,7 +16,7 @@ public class Program15 {
 
     public static void main(String[] args) {
         
-        String str = "Harshal";
+        String str = "Vivek";
 
         System.out.println("Reverse of the String is The "+revString(str));
 
