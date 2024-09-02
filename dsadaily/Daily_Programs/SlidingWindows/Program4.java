@@ -7,7 +7,7 @@ public class Program4 {
 
     public static void main(String[] args) {
         
-        int arr [] = new int []{ -3, 4, -2, 5, 3, -2, 8, 2, 1, 4};
+        int arr [] = new int []{ -3, 4, 5, -2, 3, -2, 8, 2, 1, 4};
 
         int N = arr.length;
 
