@@ -16,7 +16,7 @@ public class Program6 {
 
     public static void main(String[] args) {
         
-        int arr[] = new int []{1, 12, 10, 14, 3, 10, 5};
+        int arr[] = {1, 12, 10, 14, 3, 10, 5};
 
         int N = arr.length;
 
