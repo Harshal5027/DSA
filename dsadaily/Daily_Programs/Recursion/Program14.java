@@ -14,7 +14,7 @@ public class Program14 {
  
     public static void main(String[] args) {
         
-        String str1 = "HARSHAL";
+        String str1 = "Nikita";
 
         System.out.println(reverse(str1,0));
 
