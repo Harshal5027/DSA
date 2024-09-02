@@ -18,7 +18,7 @@ public class Program13 {
 
         int num = sc.nextInt();
 
-        System.out.println(factorial(5));
+        System.out.println(factorial(6));
 
     }
     
