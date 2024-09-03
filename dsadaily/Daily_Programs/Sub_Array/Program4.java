@@ -7,7 +7,7 @@ public class Program4 {
         int arr[]=new int[]{1,2,3,1,3,4,6,4,6,3};
         
         int N=arr.length;
-        int len=0;
+        int length=0;
 
         int maxValue=Integer.MIN_VALUE;
         int minValue=Integer.MAX_VALUE;
