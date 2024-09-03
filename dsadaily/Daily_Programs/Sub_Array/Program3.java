@@ -6,7 +6,7 @@ public class Program3 {
         int arr[]=new int[]{1,2,3,1,3,4,6,4,6,3};
 
         int N=arr.length;
-        int len=0;
+        int length=0;
         int minLength=Integer.MAX_VALUE;
 
         int maxValue=Integer.MIN_VALUE;
@@ -24,18 +24,18 @@ public class Program3 {
             if(arr[i]==minValue){
                 for(int j=i+1;j<N;j++){
                     if(arr[j]==maxValue){
-                        len=j-i+1;
-                        if(minLength>len){
-                            minLength=len;
+                        length=j-i+1;
+                        if(minLength>length){
+                            minLength=length;
                         }
                     }
                 }
             }else if(arr[i]==maxValue){
                 for(int j=i+1;j<N;j++){
                     if(arr[j]==minValue){
-                        len=j-i+1;
-                        if(minLength>len){
-                            minLength=len;
+                        length=j-i+1;
+                        if(minLength>length){
+                            minLength=length;
                         }
                     }
                 }
