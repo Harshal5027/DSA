@@ -7,16 +7,16 @@ public class Program1 {
         char arr[]=new char[]{'a','b','e','g','a','g'};
 
         int N=arr.length;
-        int count=0;
+        int countt=0;
         int acount=0;
         for(int i=0; i<N; i++){
             if(arr[i]=='a'){
                 acount++;
             }else if(arr[i]=='g'){
-                count=count+acount;
+                countt=countt+acount;
             }
         }
-        System.out.println(count);
+        System.out.println(countt);
     }
     
 }
