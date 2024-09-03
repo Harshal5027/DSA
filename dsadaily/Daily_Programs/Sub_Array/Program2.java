@@ -6,10 +6,10 @@ public class Program2 {
 
         char arr[]=new char[]{'a','b','e','g','a','g'};
 
-        int N=arr.length;
+        int n=arr.length;
         int count=0;
 
-        for(int i=0; i<N; i++){
+        for(int i=0; i<n; i++){
             if(arr[i]=='a'){
                 for(int j=i+1; j<N; j++){
                     if(arr[j]=='g'){
