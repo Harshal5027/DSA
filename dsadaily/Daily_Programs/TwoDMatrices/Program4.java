@@ -27,23 +27,24 @@ public class Program4 {
             }
 
             for(int k=0; k<N-1; k++){
-                System.out.println(arr[i][j]+" ");
+                System.out.print(arr[i][j]+" ");
                 i++;
             }
 
             for( int k=0 ; k<N-1; k++){
-                System.out.println( arr[i][j]+" ");
+                System.out.print( arr[i][j]+" ");
                 j--;
             }
 
             for(int k=0; k<N-1; k++){
-                System.out.println(arr[i][j]+" ");
+                System.out.print(arr[i][j]+" ");
                 i--;
             }
+
+            N=N-2;
+            i++;
+            j++;
         }
-        N=N-2;
-        i++;
-        j++;
 
         if(N==1){
             System.out.println(arr[i][j]+" ");

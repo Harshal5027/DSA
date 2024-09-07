@@ -16,11 +16,11 @@ public class Program7 {
             int j=i;
             int k=0;
 
-            for( ; k<=arr.length-1 && j>=0 ; k++, j--){
+            while( k<=arr.length-1 && j>=0 ){
                 System.out.print(arr[k][j]+" ");
 
-                // k++;
-                // j--;
+                k++;
+                j--;
             }
             System.out.println();
         }

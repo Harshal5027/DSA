@@ -1,5 +1,5 @@
 
-//--------------------- Square matrix to transpoe matrix----------------------------
+//--------------------- Square matrix to transpoe matrix to 90 degree rotate clockwise----------------------------
 
 package Daily_Programs.TwoDMatrices;
 
