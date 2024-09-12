@@ -7,24 +7,24 @@ public class Program2 {
 
     static void sortArr( int arr[], int N){
 
-        int c0 = 0, c1 = 0 ;
+        int C0 = 0, C1 = 0 ;
 
         for( int i = 0; i < N; i++){
 
             if( arr[i] == 0){
-                c0++;
+                C0++;
             }else if( arr[i] == 1){
-                c1++;
+                C1++;
             }
         }
 
         for( int i = 0; i < N; i++){
 
-            if( i < c0 ){
+            if( i < C0 ){
 
                 arr[i] = 0;
 
-            }else if( i >= c0 && i < c0+c1){
+            }else if( i >= C0 && i < C0+C1){
 
                 arr[i] = 1;
 
