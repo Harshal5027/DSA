@@ -13,17 +13,17 @@ public class Program3 {
 
         for( int i = 0; i < N; i++){
             
-            int count = 0;
+            int Count = 0;
 
             for( int j = 0; j <= i; j++){
 
                 if( arr[i] == arr[j]){
 
-                    count++;
+                    Count++;
                 }
                 
             }
-            if( count == 2){
+            if( Count == 2){
                 System.out.println(arr[i]);
                 noDuplicate++;
             }
