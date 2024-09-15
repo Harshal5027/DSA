@@ -3,7 +3,7 @@
 
 package Assignments.Array.Array_Easy;
 
-public class Program19 {
+public class Program20 {
 
     static int bitonicPoint( int arr[], int N ){
 
