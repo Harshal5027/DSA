@@ -4,7 +4,7 @@ public class InsertionSort {
 
     static void insertionSort( int arr[], int N ){
 
-        for( int i = 0; i < N; i++){
+        for( int i = 1; i < N; i++){
 
             int element = arr[i];
 
