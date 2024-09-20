@@ -36,6 +36,5 @@ public class Program16 {
         int N = arr.length;
 
         System.out.println(rotation( arr, N ));
-    }
-    
+    }   
 }

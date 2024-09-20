@@ -28,7 +28,7 @@ public class Program12 {
         }
         System.out.println("First and last occurance are :"+firstIndex+" "+lastIndex);
     }
-
+    
     public static void main(String[] args) {
         
         int arr[]=new int[]{1,3,5,4,4,6,3,5,2};
