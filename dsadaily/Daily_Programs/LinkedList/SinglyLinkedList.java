@@ -12,10 +12,11 @@
 */
 package Daily_Programs.LinkedList;
 
+import java.util.*;
+
 class Node{
 
     int data;
-
     Node next = null;
 
     Node(int data){
@@ -36,9 +37,7 @@ public class SinglyLinkedList {
             return;
         }
         newNode.next = head;
-
         head = newNode;
-
     }
 
     void addLast( int data ){
@@ -46,18 +45,15 @@ public class SinglyLinkedList {
         Node newNode = new Node(data);
 
         if( head == null){
-
             head = newNode; 
             return;
         }
 
         Node temp = head;
 
-        while (temp.next != null) {
-            
+        while (temp.next != null) { 
             temp = temp.next;
         }
-
         temp.next = newNode;
 
     }
@@ -65,15 +61,11 @@ public class SinglyLinkedList {
     int nodeCount(){
 
         int count = 0;
-
         Node temp = head;
 
         while ( temp != null ) {
-
             count++;
-
             temp = temp.next;
-            
         }
 
         return count;
@@ -82,31 +74,23 @@ public class SinglyLinkedList {
     void addAtPos( int pos, int data){
 
         if( pos <= 0 || pos >= nodeCount()+2 ){
-
             System.out.println("Invalid Position");
             return;
-
         }
-        if( pos == 1){
 
+        if( pos == 1){
             addFirst(data);
             return;
-
         }
 
         if( pos == nodeCount()+1){
-
             addLast(data);
             return;
-
         }
 
         Node newNode = new Node(data);
-
         Node temp = head;
-
         while ( pos - 2 != 0 ) {
-
             temp = temp.next;
             pos--;    
         }
@@ -147,7 +131,6 @@ public class SinglyLinkedList {
         Node temp = head;
 
         while( temp.next.next != null){
-
             temp = temp.next;
         }
         temp.next = null;
@@ -157,30 +140,25 @@ public class SinglyLinkedList {
     void deleteAtPos(int pos){
 
         if( pos <= 0 || pos > nodeCount()){
-
             System.out.println(" Invalid position ");
             return;
         }
-        if( nodeCount() == 1 ){
 
+        if( nodeCount() == 1 ){
             deleteFirst();
             return;
 
         }
         if( nodeCount() == pos ){
-
             deleteLast();
             return;
 
         }
 
         Node temp = head;
-
         while( pos - 2 != 0 ){
-
             temp = temp.next;
             pos--;
-
         }
         temp.next = temp.next.next;
 
@@ -198,7 +176,7 @@ public class SinglyLinkedList {
 
         while( temp != null){
 
-            System.out.print(temp.data+"->");
+            System.out.print("("+temp.data+" + "+ temp.next +") ->");
 
             temp = temp.next;
         }
@@ -212,29 +190,73 @@ class LinkedList{
         
         SinglyLinkedList newSinglyLinkedList = new SinglyLinkedList();
 
-        newSinglyLinkedList.addFirst(10);
-        newSinglyLinkedList.addFirst(20);
+        Scanner sc = new Scanner(System.in);
 
-         newSinglyLinkedList.addLast(30);
+        char ch;
 
-         newSinglyLinkedList.addLast(40);
+        int data;
 
-        // newSinglyLinkedList.addAtPos(0, 0);
+        int pos;
 
-         newSinglyLinkedList.addAtPos(1, 100);
+        do{
+            System.out.println(" Perform Operations \n 1.AddFirst\n2.AddLast\n3.AddAtPosition\n4.DeleteFirst\n5.DeleteLast\n6.DeleteAtPosition\n7.PrintLinkedList\n8.NodeCount ");
 
-         newSinglyLinkedList.addAtPos(6, 700);
+            System.out.println("Enter Choise ");
+            int choise = sc.nextInt();
 
-         newSinglyLinkedList.addAtPos(5, 500);
+            switch (choise) {
+                case 1:
+                    System.out.println("Enter a data");
+                    data = sc.nextInt();
+                    newSinglyLinkedList.addFirst(data);
+                    break;
 
-         newSinglyLinkedList.deleteFirst();
+                case 2:
+                    System.out.println("Enter a data");
+                    data = sc.nextInt();
+                    newSinglyLinkedList.addLast(data);
+                    break;
 
-         newSinglyLinkedList.deleteLast();
+                case 3:
+                    System.out.println("Enter a Position");
+                    pos = sc.nextInt();
+                    System.out.println("Enter a data");
+                    data = sc.nextInt();
+                    newSinglyLinkedList.addAtPos(pos, data);
+                    break;
 
-         newSinglyLinkedList.deleteAtPos(5);
+                case 4:
+                    newSinglyLinkedList.deleteFirst();
+                    break;
 
-        newSinglyLinkedList.printSLL();
+                case 5:
+                    newSinglyLinkedList.deleteLast();
+                    break;
 
-        System.out.println(newSinglyLinkedList.nodeCount());
+                case 6:
+                    pos = sc.nextInt();
+                    newSinglyLinkedList.deleteAtPos(pos);
+                    break;
+
+                case 7:
+                    System.out.println("Print LinkedList");
+                    newSinglyLinkedList.printSLL();
+                    break;
+
+                case 8:
+                    System.out.println("Node count are : ");
+                    System.out.println(newSinglyLinkedList.nodeCount());
+                    break;
+                
+                default:
+                    System.out.println("Invalid Choise");
+                    break;
+            }
+
+            System.out.println("Do you want to continue");
+            ch = sc.next().charAt(0);
+
+        }while(ch == 'Y' || ch == 'y');
+
     }
 }
