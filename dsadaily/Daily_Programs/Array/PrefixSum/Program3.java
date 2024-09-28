@@ -1,40 +1,32 @@
-
-//  Prefix sum without exctra array
-
 package Daily_Programs.PrefixSum;
 
-import java.util.Scanner;
-
-public class Program3 {
+public class Program4 {
 
     public static void main(String[] args) {
         
-        int arr[] = {-3, 6, 2, 4, 5, 2, 8, -9, 3, 1};
+        int arr[] = {3, 1, 2};
 
         int N = arr.length;
 
-        int Q =3;
+        int count = 0;
 
-        for( int i = 1; i < N; i++){
+        int max = Integer.MIN_VALUE;
 
-            arr[i] = arr[i-1] + arr[i];
+        for( int i =0 ; i < N; i++){
 
-        }
+            if( max < arr[i]) {
 
-        Scanner sc = new Scanner(System.in);
-        for( int i = 0; i < Q; i++){
+                max = arr[i];
 
-            int startIndex = sc.nextInt();
+                count = 0;
+            }
 
-            int endIndex = sc.nextInt();
-
-            if( startIndex == 0){
-                System.out.println(arr[endIndex]);
-            }else{
-                System.out.println(arr[endIndex] - arr[startIndex]);
+            if( max == arr[i] ){
+                count++;
             }
         }
-        
+
+        System.out.println(N-count);
     }
     
 }
