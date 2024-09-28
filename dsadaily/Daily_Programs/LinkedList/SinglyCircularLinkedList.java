@@ -193,6 +193,7 @@ public class SinglyCircularLinkedList {
         }
         System.out.print("("+temp.data+" + "+ temp.next +") ->");
         // System.out.println("null");
+        System.out.println();
     }
 }
 

@@ -1,6 +1,5 @@
 package Daily_Programs.LinkedList;
 
-
 /*   Singly LinkedList 
         -addFirst
         -addLast

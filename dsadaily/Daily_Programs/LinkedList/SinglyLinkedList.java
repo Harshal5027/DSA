@@ -28,16 +28,20 @@ public class SinglyLinkedList {
     
     Node head = null;
 
+    Node tail = null;
+
     void addFirst( int data ){
 
         Node newNode = new Node(data);
 
         if( head == null ){
             head = newNode;
+            tail = newNode;
             return;
         }
         newNode.next = head;
         head = newNode;
+        
     }
 
     void addLast( int data ){
@@ -46,15 +50,19 @@ public class SinglyLinkedList {
 
         if( head == null){
             head = newNode; 
+            tail = newNode;
             return;
         }
 
-        Node temp = head;
+        // Node temp = head;
 
-        while (temp.next != null) { 
-            temp = temp.next;
-        }
-        temp.next = newNode;
+        // while (temp.next != null) { 
+        //     temp = temp.next;
+        // }
+        // temp.next = newNode;
+
+        tail.next = newNode;
+        tail = newNode;
 
     }
 
