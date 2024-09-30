@@ -172,6 +172,23 @@ public class SinglyLinkedList {
 
     }
 
+    void reverseSLL( ){
+
+        Node current = head;
+        Node previous = null;
+        Node next = head.next;
+
+        while( next != null){
+
+            current.next = previous;
+            previous = current;
+            current = next;
+            next = next.next;
+        }
+        current.next = previous;
+        head = current;
+    }
+
     void printSLL( ){
 
         if( head == null){
@@ -184,7 +201,7 @@ public class SinglyLinkedList {
 
         while( temp != null){
 
-            System.out.print("("+temp.data+" + "+ temp.next +") ->");
+            System.out.print(temp.data+" ");
 
             temp = temp.next;
         }
@@ -196,7 +213,7 @@ class LinkedList{
 
     public static void main(String[] args) {
         
-        SinglyLinkedList newSinglyLinkedList = new SinglyLinkedList();
+        SinglyLinkedList ll = new SinglyLinkedList();
 
         Scanner sc = new Scanner(System.in);
 
@@ -206,65 +223,79 @@ class LinkedList{
 
         int pos;
 
-        do{
-            System.out.println(" Perform Operations \n 1.AddFirst\n2.AddLast\n3.AddAtPosition\n4.DeleteFirst\n5.DeleteLast\n6.DeleteAtPosition\n7.PrintLinkedList\n8.NodeCount ");
+        ll.addFirst(10);
+        ll.addFirst(20);
+        ll.addFirst(30);
+        ll.addFirst(40);
 
-            System.out.println("Enter Choise ");
-            int choise = sc.nextInt();
+        ll.addLast(50);
+        ll.addLast(60);
 
-            switch (choise) {
-                case 1:
-                    System.out.println("Enter a data");
-                    data = sc.nextInt();
-                    newSinglyLinkedList.addFirst(data);
-                    break;
+        ll.printSLL();
 
-                case 2:
-                    System.out.println("Enter a data");
-                    data = sc.nextInt();
-                    newSinglyLinkedList.addLast(data);
-                    break;
+        ll.reverseSLL();
 
-                case 3:
-                    System.out.println("Enter a Position");
-                    pos = sc.nextInt();
-                    System.out.println("Enter a data");
-                    data = sc.nextInt();
-                    newSinglyLinkedList.addAtPos(pos, data);
-                    break;
+        ll.printSLL();
 
-                case 4:
-                    newSinglyLinkedList.deleteFirst();
-                    break;
+        // do{
+        //     System.out.println(" Perform Operations \n 1.AddFirst\n2.AddLast\n3.AddAtPosition\n4.DeleteFirst\n5.DeleteLast\n6.DeleteAtPosition\n7.PrintLinkedList\n8.NodeCount ");
 
-                case 5:
-                    newSinglyLinkedList.deleteLast();
-                    break;
+        //     System.out.println("Enter Choise ");
+        //     int choise = sc.nextInt();
 
-                case 6:
-                    pos = sc.nextInt();
-                    newSinglyLinkedList.deleteAtPos(pos);
-                    break;
+        //     switch (choise) {
+        //         case 1:
+        //             System.out.println("Enter a data");
+        //             data = sc.nextInt();
+        //             newSinglyLinkedList.addFirst(data);
+        //             break;
 
-                case 7:
-                    System.out.println("Print LinkedList");
-                    newSinglyLinkedList.printSLL();
-                    break;
+        //         case 2:
+        //             System.out.println("Enter a data");
+        //             data = sc.nextInt();
+        //             newSinglyLinkedList.addLast(data);
+        //             break;
 
-                case 8:
-                    System.out.println("Node count are : ");
-                    System.out.println(newSinglyLinkedList.nodeCount());
-                    break;
+        //         case 3:
+        //             System.out.println("Enter a Position");
+        //             pos = sc.nextInt();
+        //             System.out.println("Enter a data");
+        //             data = sc.nextInt();
+        //             newSinglyLinkedList.addAtPos(pos, data);
+        //             break;
+
+        //         case 4:
+        //             newSinglyLinkedList.deleteFirst();
+        //             break;
+
+        //         case 5:
+        //             newSinglyLinkedList.deleteLast();
+        //             break;
+
+        //         case 6:
+        //             pos = sc.nextInt();
+        //             newSinglyLinkedList.deleteAtPos(pos);
+        //             break;
+
+        //         case 7:
+        //             System.out.println("Print LinkedList");
+        //             newSinglyLinkedList.printSLL();
+        //             break;
+
+        //         case 8:
+        //             System.out.println("Node count are : ");
+        //             System.out.println(newSinglyLinkedList.nodeCount());
+        //             break;
                 
-                default:
-                    System.out.println("Invalid Choise");
-                    break;
-            }
+        //         default:
+        //             System.out.println("Invalid Choise");
+        //             break;
+        //     }
 
-            System.out.println("Do you want to continue");
-            ch = sc.next().charAt(0);
+        //     System.out.println("Do you want to continue");
+        //     ch = sc.next().charAt(0);
 
-        }while(ch == 'Y' || ch == 'y');
+        // }while(ch == 'Y' || ch == 'y');
 
     }
 }
