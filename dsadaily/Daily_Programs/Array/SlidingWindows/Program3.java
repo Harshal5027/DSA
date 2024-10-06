@@ -1,4 +1,4 @@
-package Daily_Programs.SlidingWindows;
+package Daily_Programs.Array.SlidingWindows;
 
 
 public class Program3 {

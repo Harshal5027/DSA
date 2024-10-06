@@ -1,4 +1,4 @@
-package Daily_Programs.Sub_Array;
+package Daily_Programs.Array.Sub_Array;
 
 public class Program4 {
 

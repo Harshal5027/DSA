@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Array/PrefixSum",
+        "Array/ArrayRotation",
+        "Array/CarrForward"
+    ]
+}

@@ -5,7 +5,7 @@
                     2.all diagonals */ 
 
 
-package Daily_Programs.TwoDMatrices;
+package Daily_Programs.Array.TwoDMatrices;
 
 public class Program5 {
 

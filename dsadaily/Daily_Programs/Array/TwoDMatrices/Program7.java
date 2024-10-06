@@ -3,7 +3,7 @@
  * Convert the matrix to it transpose
  */
 
-package Daily_Programs.TwoDMatrices;
+ package Daily_Programs.Array.TwoDMatrices;
 
 public class Program7 {
 

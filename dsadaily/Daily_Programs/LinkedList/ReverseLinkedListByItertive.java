@@ -174,6 +174,7 @@ public class SinglyCircularLinkedList {
 
     }
 
+
     void printSLL( ){
 
         if( head == null){
@@ -210,6 +211,10 @@ class LinkedList{
 
         // ll.addLast(50);
         // ll.addLast(60);
+
+        // ll.printSLL();
+
+        // ll.reverseSLL();
 
         // ll.printSLL();
 

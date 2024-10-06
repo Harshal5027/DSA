@@ -12,8 +12,9 @@
  * Query2       2       7       12
  * Query3       1       1       6
  */
+package Daily_Programs.Array.PrefixSum;
 
- import java.util.*;
+import java.util.*;
 public class Program1 {
 
     static void prefixSum( int arr[], int N , int Q){

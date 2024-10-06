@@ -1,4 +1,4 @@
-package Daily_Programs.CarrForward;
+package Daily_Programs.Array.CarrForward;
 
 public class Program1 {
     public static void main(String[]args){

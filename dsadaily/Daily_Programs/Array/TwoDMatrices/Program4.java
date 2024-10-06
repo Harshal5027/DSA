@@ -1,7 +1,7 @@
 
 //----------------------------------Spiral Fashion--------------------------------------------------------------
 
-package Daily_Programs.TwoDMatrices;
+package Daily_Programs.Array.TwoDMatrices;
 
 public class Program4 {
 

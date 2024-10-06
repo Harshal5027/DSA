@@ -1,4 +1,4 @@
-package Daily_Programs.TwoDArray;
+package Daily_Programs.Array.TwoDArray;
 
 public class Program5 {
 

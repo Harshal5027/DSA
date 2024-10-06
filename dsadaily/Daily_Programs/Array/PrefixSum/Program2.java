@@ -1,11 +1,11 @@
 
 //  Prefix sum without exctra array
 
-package Daily_Programs.PrefixSum;
+package Daily_Programs.Array.PrefixSum;
 
 import java.util.Scanner;
 
-public class Program3 {
+public class Program2 {
 
     public static void main(String[] args) {
         

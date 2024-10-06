@@ -1,7 +1,7 @@
 
 //--------------------- Square matrix to transpoe matrix----------------------------
 
-package Daily_Programs.TwoDMatrices;
+package Daily_Programs.Array.TwoDMatrices;
 
 public class Program1 {
 

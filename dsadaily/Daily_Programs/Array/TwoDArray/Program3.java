@@ -1,7 +1,7 @@
 
 //-------------------------------------------ROW Wise Sum-------------------------------------------
 
-package Daily_Programs.TwoDArray;
+package Daily_Programs.Array.TwoDArray;
 
 public class Program3 {
 

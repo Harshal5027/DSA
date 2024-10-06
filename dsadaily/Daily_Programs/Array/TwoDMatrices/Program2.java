@@ -1,7 +1,7 @@
 
 //--------------------- Square matrix to transpoe matrix to 90 degree rotate clockwise----------------------------
 
-package Daily_Programs.TwoDMatrices;
+package Daily_Programs.Array.TwoDMatrices;
 
 public class Program2 {
 
