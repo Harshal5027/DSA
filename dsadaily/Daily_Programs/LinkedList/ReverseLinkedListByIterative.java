@@ -2,7 +2,7 @@ package Daily_Programs.LinkedList;
 
 import java.util.Scanner;
 
-public class ReverseLinkedList {
+public class ReverseLinkedListByIterative {
 
     class Node{
 
@@ -63,10 +63,10 @@ public class ReverseLinkedList {
 }
 
 class Client{
-
+    
     public static void main(String[] args) {
 
-        ReverseLinkedList rl = new ReverseLinkedList();
+        ReverseLinkedListByIterative rl = new ReverseLinkedListByIterative();
         
         Scanner sc = new Scanner(System.in);
 
