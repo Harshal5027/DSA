@@ -1,122 +1,122 @@
-// package Daily_Programs.LinkedList;
+package Daily_Programs.LinkedList;
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class FasterAndSlowerPointer {
+public class FasterAndSlowerPointer {
 
-//     class Node{
+    class Node{
 
-//         int data;
-//         Node next = null;
+        int data;
+        Node next = null;
 
-//         Node(int data){
-//             this.data = data;
-//         }
-//     }
+        Node(int data){
+            this.data = data;
+        }
+    }
 
-//     Node head = null;
-//     void addFirst(int data){
+    Node head = null;
+    void addFirst(int data){
 
-//         Node newNode = new Node(data);
+        Node newNode = new Node(data);
 
-//         if(head == null){
-//             head = newNode;
-//             return;
-//         }
-//         newNode.next = head;
-//         head = newNode;
-//     }
+        if(head == null){
+            head = newNode;
+            return;
+        }
+        newNode.next = head;
+        head = newNode;
+    }
 
-//     // int countNode(){
-//     //     int count = 0;
-//     //     Node temp = head;
+    // int countNode(){
+    //     int count = 0;
+    //     Node temp = head;
 
-//     //     while(temp != null){
-//     //         count++;
-//     //         temp = temp.next;
-//     //     }
-//     //     return count;
-//     // }
+    //     while(temp != null){
+    //         count++;
+    //         temp = temp.next;
+    //     }
+    //     return count;
+    // }
 
-//     int middleElement(){
+    int middleElement(){
 
-//         if( head == null ){
-//             System.out.println("LinkedList is Empty!!!");
-//             return -1;
-//         }
+        if( head == null ){
+            System.out.println("LinkedList is Empty!!!");
+            return -1;
+        }
         
-//         Node slower = head;
-//         Node faster = head.next;
+        Node slower = head;
+        Node faster = head.next;
 
-//         while (faster != null) {
+        while (faster != null) {
 
-//             slower = slower.next;
-//             faster = faster.next;
+            slower = slower.next;
+            faster = faster.next;
 
-//             if( faster != null)
-//                 faster = faster.next;
-//         }
-//         return slower.data;
-//     }
-//     void printSll(){
+            if( faster != null)
+                faster = faster.next;
+        }
+        return slower.data;
+    }
+    void printSll(){
 
-//         Node temp = head;
-//         System.out.print("[");
-//         while( temp != null){
+        Node temp = head;
+        System.out.print("[");
+        while( temp != null){
 
-//             System.out.print(temp.data+" ");
-//             temp = temp.next;
+            System.out.print(temp.data+" ");
+            temp = temp.next;
             
-//         }
-//         System.out.println("]");
-//     }  
-// }
+        }
+        System.out.println("]");
+    }  
+}
 
-// class Client{
+class Client{
 
-//     public static void main(String[] args) {
+    public static void main(String[] args) {
 
-//         FasterAndSlowerPointer element = new FasterAndSlowerPointer();
+        FasterAndSlowerPointer element = new FasterAndSlowerPointer();
         
-//         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-//         char ch;
+        char ch;
 
-//         do {
+        do {
             
-//             System.out.println("1.Add element");
-//             System.out.println("2.Find Middle element");
-//             System.out.println("3.PrintLinkedList");
-//             System.out.print("\nSelect the Choise : ");
+            System.out.println("1.Add element");
+            System.out.println("2.Find Middle element");
+            System.out.println("3.PrintLinkedList");
+            System.out.print("\nSelect the Choise : ");
 
-//             int choise = sc.nextInt();
+            int choise = sc.nextInt();
 
-//             switch (choise) {
-//                 case 1:
-//                     System.out.print("Enter a element : ");
-//                     element.addFirst(sc.nextInt());
-//                     break;
+            switch (choise) {
+                case 1:
+                    System.out.print("Enter a element : ");
+                    element.addFirst(sc.nextInt());
+                    break;
 
-//                 case 2 :
-//                     int val = element.middleElement();
-//                     if(val != -1)
-//                         System.out.println("Middle Element of the LinkedList is : "+ val);
+                case 2 :
+                    int val = element.middleElement();
+                    if(val != -1)
+                        System.out.println("Middle Element of the LinkedList is : "+ val);
 
-//                     break;
+                    break;
 
-//                 case 3: 
-//                     element.printSll();
-//                     break;
+                case 3: 
+                    element.printSll();
+                    break;
             
-//                 default:
-//                     System.out.println("Invalid choise");
-//                     break;
-//             }
-//             System.out.print("Do you want you continue : ");
-//             ch = sc.next().charAt(0);
+                default:
+                    System.out.println("Invalid choise");
+                    break;
+            }
+            System.out.print("Do you want you continue : ");
+            ch = sc.next().charAt(0);
 
-//         } while (ch == 'y' || ch =='Y');
+        } while (ch == 'y' || ch =='Y');
 
-//         sc.close();
-//     }
-// }
+        sc.close();
+    }
+}

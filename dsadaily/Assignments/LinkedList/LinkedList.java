@@ -1,6 +1,6 @@
 package Assignments.LinkedList;
 
-public class ProgramLinkedList {
+public class LinkedList {
 
     int count;
 
@@ -14,6 +14,7 @@ public class ProgramLinkedList {
     }
 
     Node head = null;
+    Node tail = null;
 
     void addFirst( int data ){
 
@@ -21,6 +22,7 @@ public class ProgramLinkedList {
 
         if( head == null ){
             head = newNode;
+            tail = newNode;
             count++;
             return;
         }
@@ -29,10 +31,31 @@ public class ProgramLinkedList {
         count++;
     }
 
+    void addLast( int data ){
+
+        Node newNode = new Node(data);
+
+        if( head == null ){
+            head = newNode;
+            tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+        tail = newNode;
+    }
+
     int size(){
 
         return count;
     }
+
+    void LLInsertion(LinkedList ll){
+
+
+        
+    }
+
+    
     void printll(){
         if( head == null ){
             System.out.println("Nothing to print");
@@ -52,7 +75,7 @@ class Driver{
 
     public static void main(String[] args) {
         
-        ProgramLinkedList pll = new ProgramLinkedList();
+        LinkedList pll = new LinkedList();
 
         pll.addFirst(10);
         pll.addFirst(20);
