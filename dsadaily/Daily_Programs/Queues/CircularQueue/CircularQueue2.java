@@ -1,5 +1,5 @@
 
-//      Circular Queue using LinkedList
+//      CircularQueue using LinkedList
 
 package Daily_Programs.Queues.CircularQueue;
 
@@ -95,7 +95,7 @@ public class CircularQueue2 {
 }
 
 class CircularQueueLinkedListOperation{
-    //instant variable for array, front, rear, maxSize
+
     Node front;
     Node rear;
 
