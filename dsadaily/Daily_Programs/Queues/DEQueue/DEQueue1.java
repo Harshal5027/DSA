@@ -174,8 +174,8 @@ class DEQueueArrayOperation{
         return queueArr[front];
     }
 
-    //method for delete element from queue
-    int dequeue(){
+    //method for delete element from front queue
+    int dequeueAtFirst(){
         if(front == -1){
             return -1;
         }
@@ -187,6 +187,22 @@ class DEQueueArrayOperation{
             front = 0;
         }else{
             front++;
+        }
+        return ret;
+    }
+    //method for delete element from last queue
+    int dequeueAtLast(){
+        if(front == -1){
+            return -1;
+        }
+        int ret = queueArr[rear];
+        if(front == rear){
+            front = rear = -1;
+            return ret;
+        }else if(rear == 0 ){
+            rear = maxSize - 1;
+        }else{
+            rear--;
         }
         return ret;
     }
