@@ -5,9 +5,8 @@ package Daily_Programs.Queues.DEQueue;
 import java.util.Scanner;
 
 public class DEQueue2 {
-    
+
     public static void main(String[] args) {
-        
 
         Scanner sc = new Scanner(System.in);
 

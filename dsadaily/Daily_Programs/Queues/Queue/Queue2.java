@@ -1,4 +1,4 @@
-package Daily_Programs.Queues;
+package Daily_Programs.Queues.Queue;
 
 import java.util.Scanner;
 
